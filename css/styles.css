@@ -1,0 +1,177 @@
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+/* ******************** typography *********************** */
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Hahmlet', serif;
+}
+
+h1 {
+    flex: 1 1 10.625rem;
+    margin-left: 1rem;
+}
+/* ******************** header *********************** */
+.header-heading {
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+.svg-anchor {
+    min-width: 5rem;
+    max-width: 5rem;
+}
+/* ******************************************************* */
+.toggle-btn {
+    border: none;
+    background-color: #fff;
+    padding: 0;
+    margin-left: 1.1rem;
+}
+
+.toggle-btn:hover {
+    cursor: pointer;
+}
+
+.header-nav {
+    flex: 0 1 100%;
+    max-height: 0;
+    text-align: center;
+    overflow: hidden;
+    transition: max-height 0.7s ease-in-out;
+    margin-top: 1rem;
+    /* position: absolute; */
+}
+
+.show-nav {
+    max-height: 200px;
+}
+
+.main-navigation li {
+    line-height: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.main-navigation a {
+    display: block;
+}
+
+.main-navigation a:hover,
+.main-navigation a:active {
+    background-color: cornflowerblue;
+    border-radius: .3125rem;
+}
+/* ************************************************************ */
+.banner-nav {
+    background-color: bisque;
+    padding: 1rem;
+}
+
+.secondary-navigation {
+    display: flex;
+    flex-flow: wrap;
+    gap: 0.5rem;
+}
+
+.secondary-navigation li {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: center;
+    padding: 0.75rem 0.2rem;
+    flex: 1 1 4.375rem;
+}
+
+/* ******************** main page styles ******************** */
+.home-page-main a {
+    color: green;
+}
+
+@media screen and (min-width: 336px) {
+    h1 {
+        min-width: 13rem;
+    }
+    
+    .secondary-navigation li {
+        flex: 1 1 6rem;
+    }
+}
+
+@media screen and (min-width: 440px) {
+    .secondary-navigation li {
+        flex: 1 1 8.125rem;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .secondary-navigation li {
+        flex: 1 1 10.9375rem;
+    }
+
+    .main-navigation {
+        width: 40%;
+        margin-left: 60%;
+        text-align: right;
+    }
+
+    .main-navigation a {
+        padding-right: 1.25rem;
+    }
+}
+
+@media screen and (min-width: 700px) {
+
+}
+
+@media screen and (min-width: 755px) {
+    .secondary-navigation li {
+        flex: 1 1 14.375rem;
+    }
+
+    .main-navigation {
+        width: 30%;
+        margin-left: 70%;
+        text-align: right;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    /* **************************** header-nav ******************************** */
+    .toggle-btn {
+        display: none;
+    }
+    
+    .header-nav {
+        max-height: initial;
+        overflow: visible;
+        flex: 0 1 auto;
+    }
+
+    .main-navigation {
+        display: flex;
+        width: fit-content;
+        margin-left: 0;
+        gap: 1rem;
+    }
+
+    .main-navigation a {
+        padding: 0 0.75rem;
+    }
+    /* ************************************************************************ */
+    .secondary-navigation li {
+        flex: 1 1 6rem;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .inner-container {
+        width: 1360px;
+        margin: 0 auto;
+    }
+}
